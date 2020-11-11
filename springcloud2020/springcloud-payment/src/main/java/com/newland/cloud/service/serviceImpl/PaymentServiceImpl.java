@@ -1,8 +1,8 @@
 package com.newland.cloud.service.serviceImpl;
 
 import com.newland.cloud.dao.PaymentDao;
-import com.newland.cloud.pojo.Payment;
 import com.newland.cloud.service.PaymentService;
+import com.newland.cloud.springcloudcommons.pojo.Payment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

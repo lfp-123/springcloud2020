@@ -1,9 +1,9 @@
 package com.newland.cloud.dao;
 
-import com.newland.cloud.pojo.Payment;
+
+import com.newland.cloud.springcloudcommons.pojo.Payment;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
 /**
  * @author ${linfengpeng}

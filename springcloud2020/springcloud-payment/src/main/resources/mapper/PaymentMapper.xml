@@ -3,17 +3,17 @@
 
 <mapper namespace="com.newland.cloud.dao.PaymentDao">
 
-    <resultMap id="BaseResultMap" type="com.newland.cloud.pojo.Payment">
+    <resultMap id="BaseResultMap" type="com.newland.cloud.springcloudcommons.pojo.Payment">
         <id column="id" property="id" jdbcType="BIGINT"></id>
         <id column="serial" property="serial" jdbcType="VARCHAR"/>
     </resultMap>
 
 
-    <insert id="create" parameterType="com.newland.cloud.pojo.Payment">
+    <insert id="create" parameterType="com.newland.cloud.springcloudcommons.pojo.Payment">
         insert into cloud.payment(id,serial) VALUES (#{id},#{serial})
     </insert>
 
     <select id="getPayment" parameterType="Long" resultMap="BaseResultMap">
-        select * from cloud.zpayment WHERE id=#{id};
+        select * from cloud.payment WHERE id=#{id};
     </select>
 </mapper>

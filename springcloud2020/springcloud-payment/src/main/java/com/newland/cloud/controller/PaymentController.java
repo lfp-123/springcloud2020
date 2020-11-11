@@ -1,8 +1,9 @@
 package com.newland.cloud.controller;
 
-import com.newland.cloud.pojo.CommentResult;
-import com.newland.cloud.pojo.Payment;
+
 import com.newland.cloud.service.serviceImpl.PaymentServiceImpl;
+import com.newland.cloud.springcloudcommons.pojo.CommentResult;
+import com.newland.cloud.springcloudcommons.pojo.Payment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +21,7 @@ public class PaymentController {
     private PaymentServiceImpl paymentService;
 
     @PostMapping(value = "/payment/create")
-    public CommentResult create(Payment payment){
+    public CommentResult create(@RequestBody Payment payment){
         int i = paymentService.create(payment);
         if(i>0){
             return new CommentResult(200,"插入数据库成功",i);

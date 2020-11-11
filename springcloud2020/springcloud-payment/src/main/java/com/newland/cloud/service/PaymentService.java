@@ -1,7 +1,7 @@
 package com.newland.cloud.service;
 
-import com.newland.cloud.pojo.Payment;
-import org.apache.ibatis.annotations.Param;
+
+import com.newland.cloud.springcloudcommons.pojo.Payment;
 
 /**
  * @author ${linfengpeng}

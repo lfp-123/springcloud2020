@@ -1,4 +1,4 @@
-package com.newland.cloud.pojo;
+package com.newland.cloud.springcloudcommons.pojo;
 
 import java.io.Serializable;
 
