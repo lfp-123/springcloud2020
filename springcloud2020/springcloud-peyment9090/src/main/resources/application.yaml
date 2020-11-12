@@ -1,5 +1,6 @@
+
 server:
-  port: 9090
+  port: 8001
 spring:
   application:
     name: cloud-payment-service
@@ -13,5 +14,9 @@ spring:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.newland.cloud.pojo
-
-
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+    register-with-eureka: true
+    fetch-registry: true
