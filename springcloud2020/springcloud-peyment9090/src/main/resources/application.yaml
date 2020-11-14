@@ -17,6 +17,15 @@ mybatis:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:7001/eureka
+      #defaultZone: http://127.0.0.1:7001/eureka
+      defaultZone: http://127.0.0.1:7002/eureka,http://127.0.0.1:1001/eureka
     register-with-eureka: true
     fetch-registry: true
+  instance:
+    instance-id: payment8001
+    #禁用显示ip
+    prefer-ip-address: false
+    #客户端向服务端发送心跳的时间间隔，默认是30s
+    #lease-renewal-interval-in-seconds: 1
+    #Eureka服务端在收到最后一次心跳等待时间上限，单位为秒 默认90s
+    #lease-expiration-duration-in-seconds: 2
