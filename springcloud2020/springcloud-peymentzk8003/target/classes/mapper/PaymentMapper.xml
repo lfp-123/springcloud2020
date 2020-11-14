@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.newland.cloud.springcloudpeymentzk8003.dao.PaymentDao">
+
+    <resultMap id="BaseResultMap" type="com.newland.cloud.springcloudcommons.pojo.Payment">
+        <id column="id" property="id" jdbcType="BIGINT"></id>
+        <id column="serial" property="serial" jdbcType="VARCHAR"/>
+    </resultMap>
+
+
+    <insert id="create" parameterType="com.newland.cloud.springcloudcommons.pojo.Payment">
+        insert into cloud.payment(id,serial) VALUES (#{id},#{serial})
+    </insert>
+
+    <select id="getPayment" parameterType="Long" resultMap="BaseResultMap">
+        select * from cloud.payment WHERE id=#{id};
+    </select>
+</mapper>
