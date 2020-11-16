@@ -8,7 +8,7 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://127.0.0.1:7002/eureka/
+      defaultZone: http://127.0.0.1:1001/eureka/
 
 
   #禁用自我保护机制

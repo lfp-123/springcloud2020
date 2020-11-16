@@ -30,7 +30,6 @@ public class PaymentController {
         }
 
     }
-
     @GetMapping(value = "/payment/get/{id}")
     public CommentResult getPaymentById(@PathVariable("id") Long id){
         Payment payment = paymentService.getPayment(id);

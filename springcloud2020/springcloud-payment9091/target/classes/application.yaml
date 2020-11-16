@@ -22,7 +22,7 @@ mybatis:
 eureka:
   client:
     service-url:
-      #defaultZone: http://127.0.0.1:7001/eureka
+      #defaultZone: http://127.0.0.1:1001/eureka
       defaultZone: http://127.0.0.1:1001/eureka,http://127.0.0.1:7002/eureka
     register-with-eureka: true
     fetch-registry: true
