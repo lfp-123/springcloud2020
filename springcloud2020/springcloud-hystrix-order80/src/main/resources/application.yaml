@@ -1,0 +1,16 @@
+
+server:
+  port: 80
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:1001/eureka
+spring:
+  application:
+    name: order-springcloud-hystrix
+feign:
+  hystrix:
+    enabled: true
+
