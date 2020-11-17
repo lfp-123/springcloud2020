@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import javax.ws.rs.GET;
+
 /**
  * @author ${linfengpeng}
  * @Title: PaymentController
@@ -43,6 +45,12 @@ public class PaymentController {
         }else {
             return new CommentResult(444,"查询失败！！",null);
         }
+    }
+
+    @GetMapping(value = "/payment/lb/{id}")
+    public String getlb(@PathVariable("id") Integer id){
+        return "this is id "+id;
+
     }
 
 }
