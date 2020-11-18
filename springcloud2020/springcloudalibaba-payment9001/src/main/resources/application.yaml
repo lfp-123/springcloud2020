@@ -1,0 +1,15 @@
+
+server:
+  port: 9001
+spring:
+  application:
+    name: cloud-payment-nacos
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' #打开监控
