@@ -1,0 +1,11 @@
+server:
+  port: 90
+spring:
+  application:
+    name: order-alibaba-90
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+     
+
